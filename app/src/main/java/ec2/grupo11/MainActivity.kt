@@ -23,6 +23,10 @@ class MainActivity : AppCompatActivity(){
             startActivity(Intent(this, Formulario::class.java))
         }
 
+        binding.btnlistado.setOnClickListener {
+            startActivity(Intent(this, Listado::class.java))
+        }
+
         //val irRegistro = binding.btnregistro
         /*irRegistro.setOnClickListener(){
             val registro = Intent(this, Registro::class.java)
