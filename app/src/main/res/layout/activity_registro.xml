@@ -192,10 +192,10 @@
         app:layout_constraintVertical_bias="0.912" />
 
     <Button
-        android:id="@+id/btnregistrar"
+        android:id="@+id/btnacceder"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Registrar"
+        android:text="Acceder"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
