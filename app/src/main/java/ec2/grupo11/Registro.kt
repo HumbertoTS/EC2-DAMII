@@ -31,10 +31,8 @@ class Registro : AppCompatActivity(), View.OnClickListener {
             agregarQuitarHobbies(v)
         }else{
             when(v.id){
-
-                R.id.btnacceder -> RegistrarUsuario()
                 R.id.btnacceder -> irListaPersona()
-
+                R.id.btnacceder -> RegistrarUsuario()
             }
         }
     }
