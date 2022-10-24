@@ -56,42 +56,47 @@
             android:layout_height="30dp"
             android:layout_weight="1"
             android:text="Disminucion del gusto o del olfato"
-            android:textStyle="bold" />
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
         <CheckBox
             android:id="@+id/cbtos"
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:layout_weight="1"
-            android:text="Tos" />
+            android:text="Tos"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
         <CheckBox
             android:id="@+id/cbdolorgarganta"
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:layout_weight="1"
-            android:text="Dolor de garganta" />
+            android:text="Dolor de garganta"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
         <CheckBox
             android:id="@+id/cbcongestion"
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:layout_weight="1"
-            android:text="Congestion nasal" />
+            android:text="Congestion nasal"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
         <CheckBox
             android:id="@+id/cbfiebre"
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:layout_weight="1"
-            android:text="Fiebre" />
+            android:text="Fiebre"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
         <CheckBox
             android:id="@+id/cbninguno"
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:layout_weight="1"
-            android:text="Ninguno" />
+            android:text="Ninguno"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
     </LinearLayout>
 
     <TextView
@@ -241,28 +246,31 @@
             android:layout_height="33dp"
             android:layout_weight="1"
             android:text="Luz"
-            android:textStyle="bold" />
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
         <CheckBox
             android:id="@+id/cbagua"
             android:layout_width="match_parent"
             android:layout_height="33dp"
             android:layout_weight="1"
-            android:text="Agua" />
+            android:text="Agua"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
         <CheckBox
             android:id="@+id/cbcable"
             android:layout_width="match_parent"
             android:layout_height="33dp"
             android:layout_weight="1"
-            android:text="Cable" />
+            android:text="Cable"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
         <CheckBox
             android:id="@+id/cbinternet"
             android:layout_width="match_parent"
             android:layout_height="33dp"
             android:layout_weight="1"
-            android:text="Internet" />
+            android:text="Internet"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
     </LinearLayout>
 

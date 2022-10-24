@@ -48,7 +48,8 @@
         app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.141" />
+        app:layout_constraintVertical_bias="0.141"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/etapellidos"
@@ -56,14 +57,15 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="1dp"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="Apellidos"
+        android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.383"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.227" />
+        app:layout_constraintVertical_bias="0.227"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/etemail"
@@ -71,14 +73,15 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="1dp"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="Email"
+        android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.272"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.305" />
+        app:layout_constraintVertical_bias="0.305"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/etpassword"
@@ -93,7 +96,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.381" />
+        app:layout_constraintVertical_bias="0.381"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/textgenero"
@@ -162,22 +166,19 @@
             android:id="@+id/cbdeporte"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:text="Deporte"
-            android:textStyle="bold" />
+            />
 
         <CheckBox
             android:id="@+id/cbpintura"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:text="Pintura" />
 
         <CheckBox
             android:id="@+id/cbotro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:text="Otro" />
     </LinearLayout>
 
@@ -191,10 +192,11 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.912" />
+        app:layout_constraintVertical_bias="0.896"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/btnacceder"

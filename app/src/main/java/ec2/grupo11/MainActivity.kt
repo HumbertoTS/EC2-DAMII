@@ -22,12 +22,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     override fun onClick(view: View) {
-            when(view.id){
-                R.id.btnregistro -> irRegistro()
-                R.id.btnformulario -> irFormulario()
-                R.id.btnlistado -> irListado()
-            }
+        when(view.id){
+            R.id.btnregistro -> irRegistro()
+            R.id.btnformulario -> irFormulario()
+            R.id.btnlistado -> irListado()
         }
+    }
 
     private fun irRegistro() {
         val registro = Intent(this, Registro::class.java)
@@ -43,8 +43,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         val listado = Intent(this, Listado::class.java)
         startActivity(listado)
     }
-
-
 }
 
 

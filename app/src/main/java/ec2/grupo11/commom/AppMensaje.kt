@@ -14,12 +14,10 @@ object AppMensaje {
             snackBarView.setBackgroundColor(
                 ContextCompat.getColor(MiApp.instance, R.color.snackbarerror)
             )
-
         }else{
             snackBarView.setBackgroundColor(
                 ContextCompat.getColor(MiApp.instance, R.color.snackbarsucces)
             )
-
         }
         snackbar.show()
 
