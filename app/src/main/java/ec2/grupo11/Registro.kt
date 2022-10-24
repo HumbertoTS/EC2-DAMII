@@ -24,6 +24,7 @@ class Registro : AppCompatActivity(), View.OnClickListener {
         binding.cbpintura.setOnClickListener(this)
         binding.cbotro.setOnClickListener(this)
         binding.btnacceder.setOnClickListener(this)
+        binding.btnregistrar.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
@@ -31,22 +32,15 @@ class Registro : AppCompatActivity(), View.OnClickListener {
             agregarQuitarHobbies(v)
         }else{
             when(v.id){
+                R.id.btnregistrar -> RegistrarUsuario()
                 R.id.btnacceder -> irListaPersona()
-                R.id.btnacceder -> RegistrarUsuario()
             }
         }
     }
 
-    private fun agregarQuitarHobbies(checkBox: CheckBox) {
-        if(checkBox.isChecked)
-            listahobbies.add(checkBox.text.toString())
-        else
-            listahobbies.remove(checkBox.text.toString())
-    }
-
     private fun RegistrarUsuario() {
         if(validarFormulario()){
-            var inforpersona = binding.etdni.text.toString() + " " +
+            var infopersona = binding.etdni.text.toString() + " " +
                     binding.etnombre.text.toString()+ " " +
                     binding.etapellidos.text.toString()+ " " +
                     binding.etemail.text.toString()+ " " +
@@ -54,12 +48,20 @@ class Registro : AppCompatActivity(), View.OnClickListener {
                     obtenerGeneroSeleccionado() + " " +
                     listahobbies.toString() + " " +
                     binding.etotrohobby.text.toString()
-            listausuarios.add(inforpersona)
+            listausuarios.add(infopersona)
             AppMensaje.enviarMensaje(binding.root,
-                "Persona registrada correctamente",
+                "Dr.(a) registrado(a) correctamente",
                 TipoMensaje.SUCCESSFULL)
             setearControles()
         }
+    }
+
+
+    private fun agregarQuitarHobbies(checkBox: CheckBox) {
+        if(checkBox.isChecked)
+            listahobbies.add(checkBox.text.toString())
+        else
+            listahobbies.remove(checkBox.text.toString())
     }
 
     private fun irListaPersona() {
@@ -106,9 +108,7 @@ class Registro : AppCompatActivity(), View.OnClickListener {
     fun validarHobbies(): Boolean{
         var respuesta = false
         if(binding.cbdeporte.isChecked || binding.cbpintura.isChecked ||
-            binding.cbotro.isChecked||binding.etotrohobby.text.toString().trim().isEmpty()){
-            binding.etotrohobby.isFocusableInTouchMode = true
-            binding.etotrohobby.requestFocus()
+            binding.cbotro.isChecked){
             respuesta = true
         }
         return respuesta

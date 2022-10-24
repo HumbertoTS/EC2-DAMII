@@ -7,7 +7,7 @@
     tools:context=".ListaCuestionario">
 
     <ListView
-        android:id="@+id/lstpersonas"
+        android:id="@+id/lstcuestionario"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"

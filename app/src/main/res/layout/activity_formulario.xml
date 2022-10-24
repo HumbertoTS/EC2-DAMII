@@ -275,7 +275,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnacceder"
+        android:id="@+id/btnresolver"
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:text="Resolver"
