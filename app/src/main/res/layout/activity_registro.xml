@@ -37,22 +37,24 @@
 
     <EditText
         android:id="@+id/etnombre"
-        android:layout_width="406dp"
-        android:layout_height="44dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="Nombre"
+        android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.132" />
+        app:layout_constraintVertical_bias="0.141" />
 
     <EditText
         android:id="@+id/etapellidos"
-        android:layout_width="398dp"
-        android:layout_height="44dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:hint="Apellidos"
@@ -65,8 +67,9 @@
 
     <EditText
         android:id="@+id/etemail"
-        android:layout_width="400dp"
-        android:layout_height="40dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:hint="Email"
@@ -79,21 +82,22 @@
 
     <EditText
         android:id="@+id/etpassword"
-        android:layout_width="404dp"
-        android:layout_height="42dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="Password"
+        android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.395" />
+        app:layout_constraintVertical_bias="0.381" />
 
     <TextView
         android:id="@+id/textgenero"
-        android:layout_width="401dp"
+        android:layout_width="350dp"
         android:layout_height="37dp"
         android:text="Seleccione su Genero"
         android:textColor="@color/black"
@@ -101,7 +105,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.147"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.469" />
@@ -132,7 +136,7 @@
 
     <TextView
         android:id="@+id/texthobbies"
-        android:layout_width="408dp"
+        android:layout_width="350dp"
         android:layout_height="37dp"
         android:text="Hobbies"
         android:textColor="@color/black"
@@ -179,21 +183,22 @@
 
     <EditText
         android:id="@+id/etotrohobby"
-        android:layout_width="405dp"
-        android:layout_height="49dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="Ingrese otro Hobby"
+        android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintHorizontal_bias="0.459"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.912" />
 
     <Button
         android:id="@+id/btnacceder"
-        android:layout_width="0dp"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:text="Acceder"
         android:textColor="@color/white"
@@ -202,7 +207,7 @@
         app:iconGravity="textStart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.982" />
