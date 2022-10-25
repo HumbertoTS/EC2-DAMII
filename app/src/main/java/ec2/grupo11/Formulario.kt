@@ -8,7 +8,7 @@ import android.widget.CheckBox
 import ec2.grupo11.commom.AppMensaje
 import ec2.grupo11.commom.TipoMensaje
 import ec2.grupo11.databinding.ActivityFormularioBinding
-import ec2.grupo11.databinding.ActivityRegistroBinding
+
 
 class Formulario : AppCompatActivity(), View.OnClickListener {
 
