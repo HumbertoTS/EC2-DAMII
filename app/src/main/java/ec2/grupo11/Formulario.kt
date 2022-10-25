@@ -33,8 +33,7 @@ class Formulario : AppCompatActivity(), View.OnClickListener {
         binding.cbagua.setOnClickListener(this)
         binding.cbcable.setOnClickListener(this)
         binding.cbinternet.setOnClickListener(this)
-        binding.btnresolver.setOnClickListener{RegistrarFormulario()
-        irListaFormulario()}
+        binding.btnresolver.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
@@ -43,6 +42,11 @@ class Formulario : AppCompatActivity(), View.OnClickListener {
 
         }else if (v is CheckBox){
             marcarservicios(v)
+        }else {
+            when (v.id) {
+                R.id.btnacceder -> {RegistrarFormulario()
+                irListaFormulario()}
+            }
         }
     }
 

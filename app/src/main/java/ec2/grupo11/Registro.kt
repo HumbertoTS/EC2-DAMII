@@ -39,13 +39,13 @@ class Registro : AppCompatActivity(), View.OnClickListener {
 
     private fun RegistrarUsuario() {
         if(validarFormulario()){
-            var infopersona = "DNI: " + binding.etdni.text.toString() + "\n " +
-                   "Nombres: "+ binding.etnombre.text.toString()+ "\n " +
-                    "Apellidos: "+binding.etapellidos.text.toString()+ " \n" +
-                    "Correo: "+binding.etemail.text.toString()+ " \n" +
-                    "Contraseña: "+binding.etpassword.text.toString() + " \n" +
-                    "Género: "+obtenerGeneroSeleccionado() + "\n " +
-                    "Habbie: "+listahobbies.toString() + " \n" +
+            var infopersona = "DNI: " + binding.etdni.text.toString() + "\n" +
+                   "Nombres: "+ binding.etnombre.text.toString()+ "\n" +
+                    "Apellidos: "+binding.etapellidos.text.toString()+ "\n" +
+                    "Correo: "+binding.etemail.text.toString()+ "\n" +
+                    "Contraseña: "+binding.etpassword.text.toString() + "\n" +
+                    "Género: "+obtenerGeneroSeleccionado() + "\n" +
+                    "Habbie: "+listahobbies.toString() + "\n" +
                     "Otro Hobbie: "+binding.etotrohobby.text.toString()
             listausuarios.add(infopersona)
             AppMensaje.enviarMensaje(binding.root,

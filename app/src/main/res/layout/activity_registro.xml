@@ -208,25 +208,15 @@
         app:layout_constraintTop_toBottomOf="@+id/etotrohobby">
 
         <Button
-            android:id="@+id/btnregistrar"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Registrar"
-            android:textColor="@color/white"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:iconGravity="textStart" />
-
-        <Button
             android:id="@+id/btnacceder"
-            android:layout_width="wrap_content"
+            android:layout_width="233dp"
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
             android:text="Acceder"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:icon="@drawable/ic_baseline_check_24"/>
+            app:icon="@drawable/ic_baseline_check_24" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
