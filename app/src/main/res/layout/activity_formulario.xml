@@ -30,7 +30,7 @@
         android:id="@+id/textmarcasintomas"
         android:layout_width="match_parent"
         android:layout_height="37dp"
-        android:text="1.-Marca tus Sintomas"
+        android:text="1.-Marca tus Síntomas"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"

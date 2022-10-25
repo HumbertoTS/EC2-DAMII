@@ -24,7 +24,6 @@ class Registro : AppCompatActivity(), View.OnClickListener {
         binding.cbpintura.setOnClickListener(this)
         binding.cbotro.setOnClickListener(this)
         binding.btnacceder.setOnClickListener(this)
-        binding.btnregistrar.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
@@ -32,22 +31,22 @@ class Registro : AppCompatActivity(), View.OnClickListener {
             agregarQuitarHobbies(v)
         }else{
             when(v.id){
-                R.id.btnregistrar -> RegistrarUsuario()
-                R.id.btnacceder -> irListaPersona()
+                R.id.btnacceder -> {RegistrarUsuario()
+                    irListaPersona()}
             }
         }
     }
 
     private fun RegistrarUsuario() {
         if(validarFormulario()){
-            var infopersona = binding.etdni.text.toString() + " " +
-                    binding.etnombre.text.toString()+ " " +
-                    binding.etapellidos.text.toString()+ " " +
-                    binding.etemail.text.toString()+ " " +
-                    binding.etpassword.text.toString() + " " +
-                    obtenerGeneroSeleccionado() + " " +
-                    listahobbies.toString() + " " +
-                    binding.etotrohobby.text.toString()
+            var infopersona = "DNI: " + binding.etdni.text.toString() + "\n " +
+                   "Nombres: "+ binding.etnombre.text.toString()+ "\n " +
+                    "Apellidos: "+binding.etapellidos.text.toString()+ " \n" +
+                    "Correo: "+binding.etemail.text.toString()+ " \n" +
+                    "Contraseña: "+binding.etpassword.text.toString() + " \n" +
+                    "Género: "+obtenerGeneroSeleccionado() + "\n " +
+                    "Habbie: "+listahobbies.toString() + " \n" +
+                    "Otro Hobbie: "+binding.etotrohobby.text.toString()
             listausuarios.add(infopersona)
             AppMensaje.enviarMensaje(binding.root,
                 "Dr.(a) registrado(a) correctamente",

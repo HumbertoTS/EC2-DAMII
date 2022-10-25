@@ -6,6 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".ListaCuestionario">
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Usuarios registrados"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <ListView
         android:id="@+id/lstcuestionario"
         android:layout_width="0dp"

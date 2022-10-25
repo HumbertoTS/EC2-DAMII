@@ -6,43 +6,58 @@
     android:layout_height="match_parent"
     tools:context=".Listado">
 
-    <ListView
+    <TextView
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Libros de Medicina"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <ListView
         android:id="@+id/lvlistado"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginLeft="50dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:layout_marginTop="26dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/lvlistado"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="@+id/editText">
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="150dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="-7dp"
-        android:src="@drawable/ic_x"
-        app:layout_constraintEnd_toStartOf="@+id/lvlistado"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="-5dp"
+            android:paddingTop="6dp"
+            android:src="@drawable/ic_book_24"
+            app:layout_constraintEnd_toStartOf="@+id/lvlistado"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
+        <ImageView
         android:id="@+id/imageView4"
         android:layout_width="150dp"
         android:layout_height="70dp"
-        android:layout_marginTop="-10dp"
-        android:paddingTop="0dp"
-        android:src="@drawable/ic_x"
+        android:layout_marginTop="-9dp"
+        android:paddingTop="6dp"
+        android:src="@drawable/ic_book_24"
         app:layout_constraintEnd_toStartOf="@+id/lvlistado"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
@@ -52,8 +67,8 @@
         android:layout_width="150dp"
         android:layout_height="70dp"
         android:layout_marginTop="-10dp"
-        android:paddingTop="0dp"
-        android:src="@drawable/ic_x"
+        android:paddingTop="6dp"
+        android:src="@drawable/ic_book_24"
         app:layout_constraintEnd_toStartOf="@+id/lvlistado"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
@@ -63,8 +78,8 @@
         android:layout_width="150dp"
         android:layout_height="70dp"
         android:layout_marginTop="-10dp"
-        android:paddingTop="0dp"
-        android:src="@drawable/ic_x"
+        android:paddingTop="6dp"
+        android:src="@drawable/ic_book_24"
         app:layout_constraintEnd_toStartOf="@+id/lvlistado"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
@@ -73,9 +88,9 @@
         android:id="@+id/imageView7"
         android:layout_width="150dp"
         android:layout_height="70dp"
-        android:layout_marginTop="-10dp"
-        android:paddingTop="0dp"
-        android:src="@drawable/ic_x"
+        android:layout_marginTop="-9dp"
+        android:paddingTop="6dp"
+        android:src="@drawable/ic_book_24"
         app:layout_constraintEnd_toStartOf="@+id/lvlistado"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView6" />
@@ -85,8 +100,8 @@
         android:layout_width="150dp"
         android:layout_height="70dp"
         android:layout_marginTop="-10dp"
-        android:paddingTop="0dp"
-        android:src="@drawable/ic_x"
+        android:paddingTop="6dp"
+        android:src="@drawable/ic_book_24"
         app:layout_constraintEnd_toStartOf="@+id/lvlistado"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView7" />
@@ -96,8 +111,8 @@
         android:layout_width="150dp"
         android:layout_height="70dp"
         android:layout_marginTop="-10dp"
-        android:paddingTop="0dp"
-        android:src="@drawable/ic_x"
+        android:paddingTop="6dp"
+        android:src="@drawable/ic_book_24"
         app:layout_constraintEnd_toStartOf="@+id/lvlistado"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView8" />
@@ -107,8 +122,8 @@
         android:layout_width="150dp"
         android:layout_height="70dp"
         android:layout_marginTop="-10dp"
-        android:paddingTop="0dp"
-        android:src="@drawable/ic_x"
+        android:paddingTop="6dp"
+        android:src="@drawable/ic_book_24"
         app:layout_constraintEnd_toStartOf="@+id/lvlistado"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView9" />
@@ -118,8 +133,8 @@
         android:layout_width="150dp"
         android:layout_height="70dp"
         android:layout_marginTop="-10dp"
-        android:paddingTop="0dp"
-        android:src="@drawable/ic_x"
+        android:paddingTop="6dp"
+        android:src="@drawable/ic_book_24"
         app:layout_constraintEnd_toStartOf="@+id/lvlistado"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView10" />
@@ -129,8 +144,8 @@
         android:layout_width="150dp"
         android:layout_height="70dp"
         android:layout_marginTop="-10dp"
-        android:paddingTop="0dp"
-        android:src="@drawable/ic_x"
+        android:paddingTop="6dp"
+        android:src="@drawable/ic_book_24"
         app:layout_constraintEnd_toStartOf="@+id/lvlistado"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageVie11" />

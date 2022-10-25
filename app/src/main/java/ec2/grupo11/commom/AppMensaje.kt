@@ -9,6 +9,7 @@ object AppMensaje {
 
     fun enviarMensaje(vista: View, mensaje: String, tipo: TipoMensaje){
         val snackbar = Snackbar.make(vista,mensaje, Snackbar.LENGTH_LONG)
+        snackbar.show()
         val snackBarView: View = snackbar.view
         if(tipo ==TipoMensaje.ERROR){
             snackBarView.setBackgroundColor(

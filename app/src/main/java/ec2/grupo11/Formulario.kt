@@ -33,25 +33,22 @@ class Formulario : AppCompatActivity(), View.OnClickListener {
         binding.cbagua.setOnClickListener(this)
         binding.cbcable.setOnClickListener(this)
         binding.cbinternet.setOnClickListener(this)
-        binding.btnresolver.setOnClickListener(this)
+        binding.btnresolver.setOnClickListener{RegistrarFormulario()
+        irListaFormulario()}
     }
 
     override fun onClick(v: View) {
         if(v is CheckBox){
-            marcarsintomas(v)
-        }else if(v is CheckBox){
+           marcarsintomas(v)
+
+        }else if (v is CheckBox){
             marcarservicios(v)
-        }else{
-            when(v.id){
-                R.id.btnresolver -> RegistrarFormulario()
-                R.id.btnresolver -> irListaFormulario()
-            }
         }
     }
 
     private fun irListaFormulario() {
         val intentLista = Intent(
-            this, Formulario::class.java
+            this, ListaCuestionario::class.java
         ).apply {
             putExtra("listaformulario", listaformulario)
         }
@@ -60,11 +57,11 @@ class Formulario : AppCompatActivity(), View.OnClickListener {
 
     private fun RegistrarFormulario() {
         if(validarFormulario()){
-            var rptacuestionario = listasintomas.toString() + " " +
-                                obtenerpregunta2() + " " +
-                                obtenerpregunta3() + " " +
-                                obtenerpregunta4() + " " +
-                                listaservicios.toString()
+            var rptacuestionario =  "Síntomas: " + listasintomas.toString() + "\n" +
+                                "Fiebre: " + obtenerpregunta2() + "\n" +
+                                "¿Vive solo?: " + obtenerpregunta3() + "\n" +
+                                "¿Adulto mayor en casa?: " + obtenerpregunta4() + "\n" +
+                                "Servicios que tiene: " + listaservicios.toString()
             listaformulario.add(rptacuestionario)
             AppMensaje.enviarMensaje(binding.root,
                 "Datos registrados correctamente",
@@ -81,11 +78,11 @@ class Formulario : AppCompatActivity(), View.OnClickListener {
             listaservicios.remove(v.text.toString())
     }
 
-    private fun marcarsintomas(v: CheckBox) {
-        if(v.isChecked)
-            listasintomas.add(v.text.toString())
+    private fun marcarsintomas(check: CheckBox) {
+        if(check.isChecked)
+            listasintomas.add(check.text.toString())
         else
-            listasintomas.remove(v.text.toString())
+            listasintomas.remove(check.text.toString())
     }
 
     private fun seteardatos(){
@@ -115,7 +112,7 @@ class Formulario : AppCompatActivity(), View.OnClickListener {
 
     fun obtenerpregunta3(): String{
         var vive = ""
-        when(binding.radioGroup.checkedRadioButtonId){
+        when(binding.radioGroup2.checkedRadioButtonId){
             R.id.rbsi2 -> vive = binding.rbsi2.text.toString()
             R.id.rbno2 -> vive = binding.rbno2.text.toString()
         }
@@ -124,7 +121,7 @@ class Formulario : AppCompatActivity(), View.OnClickListener {
 
     fun obtenerpregunta4(): String{
         var adulto = ""
-        when(binding.radioGroup.checkedRadioButtonId){
+        when(binding.radioGroup3.checkedRadioButtonId){
             R.id.rbsi3 -> adulto = binding.rbsi3.text.toString()
             R.id.rbno3 -> adulto = binding.rbno3.text.toString()
         }
