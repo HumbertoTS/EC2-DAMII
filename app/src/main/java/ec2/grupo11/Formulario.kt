@@ -39,12 +39,11 @@ class Formulario : AppCompatActivity(), View.OnClickListener {
     override fun onClick(v: View) {
         if(v is CheckBox){
            marcarsintomas(v)
-
         }else if (v is CheckBox){
             marcarservicios(v)
         }else {
             when (v.id) {
-                R.id.btnacceder -> {RegistrarFormulario()
+                R.id.btnresolver -> {RegistrarFormulario()
                 irListaFormulario()}
             }
         }
